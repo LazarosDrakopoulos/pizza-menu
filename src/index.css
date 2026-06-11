@@ -165,9 +165,14 @@ body {
 
   .sizes-row {
     flex-direction: column;
-    align-items: stretch;
-    gap: 12px;
+    gap: 16px;
   }
+
+  .size-col {
+    width: 100%;
+    align-items: flex-start;
+  }
+
 
   .price-input-wrapper input {
     width: 55px;
