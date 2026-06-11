@@ -1,7 +1,7 @@
 # 🍕 Pizza Menu
 
 A responsive pizza menu web app built with React and TypeScript.  
-Live demo → [https://YOUR-LIVE-URL-HERE](https://6a2ad0a94edf18448b7d5530--gleeful-queijadas-d0e203.netlify.app/)
+Live demo → [LIVE URL](https://6a2ad0a94edf18448b7d5530--gleeful-queijadas-d0e203.netlify.app/)
 
 <img width="995" height="427" alt="Screenshot 2026-06-11 181553" src="https://github.com/user-attachments/assets/d5d71bb0-f0d6-42fa-bc7f-6189cf810c7d" />
 
