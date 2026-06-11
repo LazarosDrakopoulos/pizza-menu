@@ -1,13 +1,159 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #f5f5f5;
+  padding: 32px;
+  color: #333;
+}
+
+.app {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.category-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item-card {
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  overflow: hidden;
+}
+
+.item-card.expanded {
+  background: #deeaf3;
+  border-color: #deeaf3;
+}
+
+.item-header {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 16px 20px;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #333;
+}
+
+.item-header:focus-visible {
+  outline: 2px solid #4a90d9;
+  outline-offset: -2px;
+}
+
+.arrow {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.item-body {
+  padding: 8px 20px 20px;
+  position: relative;
+}
+
+.sizes-row {
+  display: flex;
+  gap: 24px;
+}
+
+.size-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.checkbox-label input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+  accent-color: #5b8fa8;
+  cursor: pointer;
+}
+
+.price-input-wrapper {
+  display: flex;
+  align-items: center;
+  background: #5b8fa8;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.price-input-wrapper.disabled {
+  opacity: 0.5;
+}
+
+.dollar {
+  padding: 8px 8px;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.price-input-wrapper input {
+  border: none;
+  padding: 8px 8px;
+  width: 70px;
+  font-size: 0.9rem;
+  outline: none;
+  background: #fff;
+}
+
+.price-input-wrapper input:disabled {
+  background: #f0f0f0;
+  cursor: not-allowed;
+}
+
+.undo-btn {
+  position: absolute;
+  bottom: 16px;
+  right: 20px;
+  background: none;
+  border: 2px solid #aaa;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  transition: border-color 0.2s;
+}
+
+.undo-btn:hover {
+  border-color: #5b8fa8;
+  color: #5b8fa8;
+}
+
+.undo-btn:focus-visible {
+  outline: 2px solid #4a90d9;
+  outline-offset: 2px;
 }
