@@ -9,9 +9,9 @@ Live demo → [https://YOUR-LIVE-URL-HERE](https://6a2ad0a94edf18448b7d5530--gle
 
 ## Features
 
-- Accordion-style item cards — only one open at a time
+- Accordion-style item cards only one open at a time
 - Enable/disable sizes per item with a checkbox
-- Editable prices — numbers only
+- Editable prices numbers only
 - Changes persist after page refresh (localStorage)
 - Undo button per item — reverts to original prices
 - Fully responsive
@@ -39,6 +39,6 @@ npm test -- --watchAll=false
 ```
 ## Notes
 
-- The original data had a bug — `Large` size had `sizeId: 0` (same as `Small`). Fixed to `sizeId: 2`.
+- The original data had a bug  `Large` size had `sizeId: 0` (same as `Small`). Fixed to `sizeId: 2`.
 - Built with React instead of Angular.
 - Focused on clean component structure, accessibility, and best practices over complexity.
