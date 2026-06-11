@@ -12,7 +12,7 @@ body {
 }
 
 .app {
-  max-width: 700px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -61,7 +61,7 @@ body {
 }
 
 .arrow {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #555;
 }
 
@@ -113,7 +113,7 @@ body {
 .dollar {
   padding: 8px 8px;
   color: #fff;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .price-input-wrapper input {
@@ -156,4 +156,44 @@ body {
 .undo-btn:focus-visible {
   outline: 2px solid #4a90d9;
   outline-offset: 2px;
+}
+@media (max-width: 600px) {
+  body {
+    padding: 16px;
+  }
+
+  .sizes-row {
+    gap: 12px;
+  }
+
+  .price-input-wrapper input {
+    width: 55px;
+  }
+
+  .item-header {
+    padding: 14px 16px;
+  }
+
+  .item-body {
+    padding: 8px 16px 20px;
+  }
+
+  .undo-btn {
+    right: 16px;
+  }
+}
+
+@media (max-width: 380px) {
+  .sizes-row {
+    gap: 8px;
+  }
+
+  .price-input-wrapper input {
+    width: 45px;
+    font-size: 0.8rem;
+  }
+
+  .dollar {
+    padding: 8px 5px;
+  }
 }
