@@ -73,6 +73,7 @@ body {
 .sizes-row {
   display: flex;
   gap: 24px;
+   flex-wrap: wrap;
 }
 
 .size-col {
@@ -167,7 +168,7 @@ body {
     align-items: stretch;
     gap: 12px;
   }
-  
+
   .price-input-wrapper input {
     width: 55px;
   }
