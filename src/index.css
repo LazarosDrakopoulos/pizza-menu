@@ -70,11 +70,12 @@ body {
   position: relative;
 }
 
+/* DESKTOP — 3 columns side by side */
 .sizes-row {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-  flex-wrap: nowrap;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: start;
+  gap: 24px;
 }
 
 .size-col {
@@ -82,8 +83,6 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  flex: 1;
-  min-width: 0;
 }
 
 .checkbox-label {
@@ -108,7 +107,6 @@ body {
   background: #5b8fa8;
   border-radius: 6px;
   overflow: hidden;
-  width: 100%;
 }
 
 .price-input-wrapper.disabled {
@@ -116,7 +114,7 @@ body {
 }
 
 .dollar {
-  padding: 8px 6px;
+  padding: 8px;
   color: #fff;
   font-size: 0.9rem;
   flex-shrink: 0;
@@ -124,9 +122,8 @@ body {
 
 .price-input-wrapper input {
   border: none;
-  padding: 8px 4px;
-  width: 100%;
-  min-width: 0;
+  padding: 8px;
+  width: 70px;
   font-size: 0.9rem;
   outline: none;
   background: #fff;
@@ -165,7 +162,8 @@ body {
   outline-offset: 2px;
 }
 
-@media (max-width: 480px) {
+/* MOBILE — stack sizes vertically */
+@media (max-width: 500px) {
   body {
     padding: 16px;
   }
@@ -179,17 +177,20 @@ body {
   }
 
   .sizes-row {
-    gap: 8px;
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 
-  .dollar {
-    padding: 8px 4px;
-    font-size: 0.8rem;
+  .size-col {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
   }
 
-  .price-input-wrapper input {
-    font-size: 0.8rem;
-    padding: 8px 2px;
+  .checkbox-label {
+    flex-direction: row;
+    gap: 10px;
   }
 
   .undo-btn {
