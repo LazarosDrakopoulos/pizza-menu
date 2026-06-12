@@ -66,14 +66,15 @@ body {
 }
 
 .item-body {
-  padding: 8px 20px 20px;
+  padding: 8px 20px 60px;
   position: relative;
 }
 
 .sizes-row {
   display: flex;
-  gap: 24px;
-   flex-wrap: wrap;
+  flex-direction: row;
+  gap: 16px;
+  flex-wrap: nowrap;
 }
 
 .size-col {
@@ -81,6 +82,8 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 8px;
+  flex: 1;
+  min-width: 0;
 }
 
 .checkbox-label {
@@ -105,6 +108,7 @@ body {
   background: #5b8fa8;
   border-radius: 6px;
   overflow: hidden;
+  width: 100%;
 }
 
 .price-input-wrapper.disabled {
@@ -112,15 +116,17 @@ body {
 }
 
 .dollar {
-  padding: 8px 8px;
+  padding: 8px 6px;
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  flex-shrink: 0;
 }
 
 .price-input-wrapper input {
   border: none;
-  padding: 8px 8px;
-  width: 70px;
+  padding: 8px 4px;
+  width: 100%;
+  min-width: 0;
   font-size: 0.9rem;
   outline: none;
   background: #fff;
@@ -158,24 +164,10 @@ body {
   outline: 2px solid #4a90d9;
   outline-offset: 2px;
 }
-@media (max-width: 600px) {
+
+@media (max-width: 480px) {
   body {
     padding: 16px;
-  }
-
-  .sizes-row {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .size-col {
-    width: 100%;
-    align-items: flex-start;
-  }
-
-
-  .price-input-wrapper input {
-    width: 55px;
   }
 
   .item-header {
@@ -183,25 +175,24 @@ body {
   }
 
   .item-body {
-    padding: 8px 16px 20px;
+    padding: 8px 16px 60px;
   }
 
-  .undo-btn {
-    right: 16px;
-  }
-}
-
-@media (max-width: 380px) {
   .sizes-row {
     gap: 8px;
   }
 
-  .price-input-wrapper input {
-    width: 45px;
+  .dollar {
+    padding: 8px 4px;
     font-size: 0.8rem;
   }
 
-  .dollar {
-    padding: 8px 5px;
+  .price-input-wrapper input {
+    font-size: 0.8rem;
+    padding: 8px 2px;
+  }
+
+  .undo-btn {
+    right: 16px;
   }
 }
