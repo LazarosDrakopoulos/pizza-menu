@@ -90,7 +90,7 @@ function App() {
 
   return (
     <div className="app">
-      <h2 className="category-title">Pizzaaa</h2>
+      <h2 className="category-title">Pizza</h2>
       <div className="menu-list">
         {menuState.map(item => (
           <ItemCard
