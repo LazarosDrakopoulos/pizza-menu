@@ -1,9 +1,10 @@
-# 🍕 Pizza Menu
+🍕 Pizza Menu
 
 A responsive pizza menu web app built with React and TypeScript.  
-Live demo → [PIZZA MENU](https://pizza-menu-assigment.netlify.app/)
+Live demo → [PIZZA MENU](https://pizza-menu-ecru-nine.vercel.app/)
 
-<img width="995" height="427" alt="Screenshot 2026-06-11 181553" src="https://github.com/user-attachments/assets/d5d71bb0-f0d6-42fa-bc7f-6189cf810c7d" />
+<img width="847" height="441" alt="image" src="https://github.com/user-attachments/assets/f037a76c-5709-44c9-8ccc-caba8741e404" />
+
 
 
 
