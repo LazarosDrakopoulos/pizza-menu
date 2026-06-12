@@ -61,8 +61,11 @@ body {
 }
 
 .arrow {
-  font-size: 1rem;
-  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  flex-shrink: 0;
 }
 
 .item-body {
@@ -105,8 +108,9 @@ body {
   display: flex;
   align-items: center;
   background: #5b8fa8;
-  border-radius: 6px;
+  border-radius: 4px;
   overflow: hidden;
+  border: 1px solid #5b8fa8;
 }
 
 .price-input-wrapper.disabled {
@@ -114,19 +118,23 @@ body {
 }
 
 .dollar {
-  padding: 8px;
+  padding: 7px 8px;
   color: #fff;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  font-weight: 500;
   flex-shrink: 0;
+  background: #5b8fa8;
 }
 
 .price-input-wrapper input {
   border: none;
-  padding: 8px;
+  border-left: 1px solid #d0dde6;
+  padding: 7px 8px;
   width: 70px;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   outline: none;
   background: #fff;
+  color: #333;
 }
 
 .price-input-wrapper input:disabled {
@@ -138,23 +146,24 @@ body {
   position: absolute;
   bottom: 16px;
   right: 20px;
-  background: none;
-  border: 2px solid #aaa;
+  background: #fff;
+  border: 1.5px solid #bbb;
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  font-size: 1.1rem;
+  width: 38px;
+  height: 38px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #555;
-  transition: border-color 0.2s;
+  color: #666;
+  transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
 .undo-btn:hover {
   border-color: #5b8fa8;
   color: #5b8fa8;
+  box-shadow: 0 2px 6px rgba(91,143,168,0.3);
 }
 
 .undo-btn:focus-visible {
